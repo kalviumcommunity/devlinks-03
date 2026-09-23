@@ -1,9 +1,8 @@
 export default function Tags({ tags }) {
   return (
     <div className="tags">
-      {tags.map((t) => (
-        // BUG (issue #5): missing "key" prop on the mapped tag.
-        <span className="tag">#{t}</span>
+      {tags && tags.map((t, idx) => (
+        <span key={`${t}-${idx}`} className="tag">#{t}</span>
       ))}
     </div>
   )
