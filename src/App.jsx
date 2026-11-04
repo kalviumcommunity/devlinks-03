@@ -17,7 +17,6 @@ const QUOTES = [
 export default function App() {
   const [index, setIndex] = useState(0)
   // BUG (issue #7): leftover debug console.log
-  console.log('debug: current quote index', index)
 
   // BUG (issue #2): off-by-one — Math.floor(random * length) can equal `length`? No,
   // here it uses Math.round which CAN return `length` and read undefined (out of bounds).
