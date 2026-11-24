@@ -4,8 +4,6 @@ import Quote from './components/Quote.jsx'
 import Controls from './components/Controls.jsx'
 import Tags from './components/Tags.jsx'
 import Footer from './components/Footer.jsx'
-// BUG (issue #11): unused import left in the file
-import { useEffect } from 'react'
 
 const QUOTES = [
   { text: 'Programs must be written for people to read.', author: 'Harold Abelson', tags: ['code', 'clarity'] },
